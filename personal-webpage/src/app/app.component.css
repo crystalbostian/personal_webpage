@@ -1,0 +1,23 @@
+html{
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+header{
+    background: red;
+    position: fixed;
+    top: -8px;
+    left: -8px;
+    height: 100vh;
+    width: 100px;
+}
+body{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    height: 2000px;
+    width: 80vw;
+    text-align: center;
+    background: blue;
+}

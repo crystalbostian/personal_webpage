@@ -1,0 +1,7 @@
+<body>
+<div>
+  <ul>
+    <li *ngFor='let name of names' (click)='onSelectionChange(name)' [class.selected]='name === selected'>{{name}}</li>
+  </ul>
+</div>
+</body>
