@@ -7,7 +7,7 @@ import { Constants } from '../constants';
   styleUrls: ['./crumbbar.component.css']
 })
 export class CrumbbarComponent implements OnInit {
-  selected: string = Constants.ABOUT;
+  selected: string = Constants.HOMEPAGE;
   names: string[] = [Constants.HOMEPAGE, Constants.ABOUT, Constants.PROJECTS, Constants.CONTACT];
 
   constructor() { }
