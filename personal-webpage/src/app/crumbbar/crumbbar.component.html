@@ -1,7 +1,8 @@
 <body>
 <div>
   <ul>
-    <li id='test' *ngFor='let name of names' (click)='onSelectionChange(name)' [class.selected]='name === selected' [routerLink]="[name]">{{name}}</li>
+    <li (click)='onSelectionChange("Homepage")' [class.selected]='"Homepage" === selectedOne' [routerLink]='["Homepage"]'>Homepage</li>
+    <li *ngFor='let name of names' (click)='onSelectionChange(name)' [class.selected]='name === selectedOne'>{{name}}</li>
   </ul>
 </div>
 </body>

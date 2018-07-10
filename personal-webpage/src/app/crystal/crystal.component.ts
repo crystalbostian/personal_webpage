@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CrumbbarComponent } from '../crumbbar/crumbbar.component';
+import { selected } from '../crumbbar/crumbbar.component';
+import { Constants } from '../constants';
 
 @Component({
   selector: 'app-crystal',
@@ -7,8 +8,12 @@ import { CrumbbarComponent } from '../crumbbar/crumbbar.component';
   styleUrls: ['./crystal.component.css']
 })
 export class CrystalComponent implements OnInit {
-  selected = "crystal";
+  selection: string = Constants.ABOUT;
   constructor() { }
 
   ngOnInit() { }
+
+  onClick(){
+    this.selection = selected;
+  }
 }

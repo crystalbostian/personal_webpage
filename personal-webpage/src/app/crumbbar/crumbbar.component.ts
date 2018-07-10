@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Constants } from '../constants';
-import { CrystalComponent } from '../crystal/crystal.component';
+
+export var selected: string = Constants.ABOUT;
 
 @Component({
   selector: 'app-crumbbar',
@@ -8,8 +9,8 @@ import { CrystalComponent } from '../crystal/crystal.component';
   styleUrls: ['./crumbbar.component.css']
 })
 export class CrumbbarComponent implements OnInit {
-  selected: string = Constants.ABOUT;
-  names: string[] = [Constants.HOMEPAGE, Constants.ABOUT, Constants.PROJECTS, Constants.CONTACT];
+  names: string[] = [Constants.ABOUT, Constants.PROJECTS, Constants.CONTACT];
+  selectedOne: string = Constants.ABOUT;
 
   constructor() { }
 
@@ -17,6 +18,7 @@ export class CrumbbarComponent implements OnInit {
   }
 
   onSelectionChange(selection: string): void{
-    this.selected = selection;
+    selected = selection;
+    this.selectedOne = selection;
   }
 }

@@ -1,9 +1,6 @@
 <header>
-  <app-crumbbar (click)='letsTryThis()'></app-crumbbar>
-  <!-- <app-about-crystal *ngIf='selected === Constants.ABOUT'></app-about-crystal>
-  <app-contact-crystal *ngIf='selected === Constants.CONTACT'></app-contact-crystal>
-  <app-projects-crystal *ngIf='selected === Constants.PROJECTS'></app-projects-crystal> -->
+  <app-crumbbar (click)='onClick()'></app-crumbbar>
+  <app-about-crystal *ngIf='selection === "About Me"'></app-about-crystal>
+  <app-contact-crystal *ngIf='selection === "Contact"'></app-contact-crystal>
+  <app-projects-crystal *ngIf='selection === "My Projects"'></app-projects-crystal>
 </header>
-<body>
-  {{selected}}
-</body>
